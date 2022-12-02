@@ -1,6 +1,6 @@
 "use strict";
 
-class Cube extends Figeure3D {
+class Cube extends Figure3D {
   /**
    *
    * @param {number} side
@@ -23,7 +23,7 @@ class Cube extends Figeure3D {
 }
 
 try {
-  const figure_2 = new Cube(5);
+  const figure_2 = new Cube(4.5);
   console.log(figure_2);
   console.log(getVolume3DFigure(figure_2));
 } catch (error) {

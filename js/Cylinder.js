@@ -1,6 +1,6 @@
 "use strict";
 
-class Cylinder extends Figeure3D {
+class Cylinder extends Figure3D {
   /**
    *
    * @param {number} radius
@@ -33,7 +33,7 @@ class Cylinder extends Figeure3D {
 }
 
 try {
-  const figure_3 = new Cylinder(2, 5);
+  const figure_3 = new Cylinder(12, 5);
   console.log(figure_3);
   console.log(getVolume3DFigure(figure_3));
 } catch (error) {

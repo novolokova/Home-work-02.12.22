@@ -1,6 +1,6 @@
 "uce strict";
 
-class Sphere extends Figeure3D {
+class Sphere extends Figure3D {
   /**
    *
    * @param {number} radius
@@ -23,7 +23,7 @@ class Sphere extends Figeure3D {
 }
 
 try {
-  const figure_1 = new Sphere(3.6);
+  const figure_1 = new Sphere(12);
   console.log(figure_1);
 
   console.log(getVolume3DFigure(figure_1));

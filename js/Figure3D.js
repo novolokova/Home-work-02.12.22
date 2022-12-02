@@ -1,19 +1,19 @@
 "use strict";
 
-class Figeure3D {
+class Figure3D {
   /**
    * This is abstract class
    * @param {string} name
    */
   constructor(name) {
-    if (this.constructor === Figeure3D) {
+    if (this.constructor === Figure3D) {
       throw new Error("You can't create instance in abstract class");
     }
     this.name = name;
   }
   set name(name) {
     if (typeof name !== "string") {
-      throw new TypeError("name figeure must be string");
+      throw new TypeError("name figure must be string");
     }
     this._name = name;
   }
@@ -26,8 +26,8 @@ class Figeure3D {
 }
 
 try {
-  const figeure = "false figeure";
-  // console.log(figeure.getValume())// error
+  const figere = "false figure";
+  // console.log(figure.getValume())// error
 } catch (error) {
   console.log(error);
 }
@@ -37,7 +37,7 @@ try {
  * @returns 
  */
 function getVolume3DFigure(obj) {
-  if (obj instanceof Figeure3D) {
+  if (obj instanceof Figure3D) {
     return obj.getValume();
   }
   throw new TypeError("Object must be figure!");
